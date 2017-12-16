@@ -1,0 +1,23 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html, body{
+	width: 100%;
+	height: 100%;
+}
+#app{
+	width: 400px;
+	height: 400px;
+}
+#myChart{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#title{
+	position: absolute;
+	z-index: 1;
+	left: 165px;
+    top: 10px;
+}
