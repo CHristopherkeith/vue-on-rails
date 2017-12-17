@@ -10,6 +10,10 @@ html, body{
 	width: 400px;
 	height: 400px;
 }
+#app>div{
+	width: 100%;
+	height: 100%;
+}
 #myChart{
 	width: 100%;
 	height: 100%;
@@ -20,4 +24,30 @@ html, body{
 	z-index: 1;
 	left: 165px;
     top: 10px;
+},
+.release{
+	color: black;
+}
+.trigger{
+	color: gray;
+}
+.staticBt, #all{
+	position: absolute;
+    left: 180px;
+    top: 330px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+#bt0{
+	left: 130px;
+}
+#bt1{
+	left: 240px;
 }

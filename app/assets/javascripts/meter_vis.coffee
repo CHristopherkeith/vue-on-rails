@@ -7,4 +7,6 @@
 #= require vue
 #= require vue-router
 
+#= require meter_vis/component/foo
+#= require meter_vis/view/view
 #= require meter_vis/main
