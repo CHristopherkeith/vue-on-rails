@@ -18,6 +18,15 @@ $(document).ready(function(){
 			isSelect: true
 		},
 		methods: {
+			changeMode: function(){
+				console.log(this.$router)
+				console.log(this.$route)
+				if(this.$route.path !== '/bar2'){
+					this.$router.push('/bar2')
+				}else{
+					this.$router.push('/bar1')
+				}
+			}
 		},
 		router: router
 	})

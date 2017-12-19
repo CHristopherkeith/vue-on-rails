@@ -3,6 +3,12 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 #= require echarts-all
+#= require theme/dark
+#= require theme/gray
+#= require theme/macarons
+#= require theme/mint
+#= require theme/sakura
+#= require theme/shine
 #= require jquery-2.2.2
 #= require vue
 #= require vue-router

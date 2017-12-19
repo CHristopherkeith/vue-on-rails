@@ -51,3 +51,7 @@ html, body{
 #bt1{
 	left: 240px;
 }
+#changeMode{
+	position: absolute;
+    left: 200px;
+}
