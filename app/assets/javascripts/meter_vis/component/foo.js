@@ -83,6 +83,32 @@ Vue.component('Foo', {
     this.myChart = echarts.init(document.getElementById('myChart'));
     this.myChart.setOption(this.option);  
     this.myChart.setTheme(DARK_THEME);  
+    ajaxTest().then(function(res){
+      console.log(res, 'res')
+    })
+
+    function ajaxTest(){
+      return $.ajax({
+        type: 'post',
+        // url: './foo',
+        url: '/meter_vis/foo',
+        data: /*JSON.stringify(*/{
+          a: 'a',
+          b: 'b'
+        }/*)*/,
+        headers: {
+          'X-CSRF-Token': $('meta[name=csrf-token]').attr('content')
+        },
+        dataType: 'json',
+        success: function(){
+
+        },
+        error: function(){
+
+        }
+      })
+    }
+
   },
   watch: {
 	selected: function(){
