@@ -92,14 +92,16 @@ Vue.component('Foo', {
         type: 'post',
         // url: './foo',
         url: '/meter_vis/foo',
-        data: /*JSON.stringify(*/{
+        data: JSON.stringify({
           a: 'a',
           b: 'b'
-        }/*)*/,
+        }),
+        // {a: 'a', b: 'b'},
         headers: {
-          'X-CSRF-Token': $('meta[name=csrf-token]').attr('content')
+          'X-CSRF-Token': $('meta[name=csrf-token]').attr('content'),
+          'Content-Type': 'application/json;charset=utf-8'
         },
-        dataType: 'json',
+        // dataType: 'json',
         success: function(){
 
         },
